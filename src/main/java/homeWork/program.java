@@ -11,11 +11,12 @@ public class program {
             nums.add(index++);
         }
 
-         double avg = nums.stream()
+        System.out.println("Среднее значение всех чётных чисел = " +
+                nums.stream()
                 .filter(integer -> integer % 2 == 0)
                  .mapToInt(Integer::intValue)
                  .average()
-                 .orElse(0);
-        System.out.println("Среднее значение = " + avg);
+                 .orElse(0));
+
     }
 }

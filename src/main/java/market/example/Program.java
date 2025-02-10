@@ -34,7 +34,7 @@ public class Program {
                     }
                     case 1 -> {
                         System.out.println("Список товаров:");
-                        market.printThings(Food.class);
+                        market.printThings(Thing.class);
                     }
 
                     case 2 -> CreateCart(Snack.class, market);

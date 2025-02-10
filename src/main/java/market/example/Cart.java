@@ -4,6 +4,7 @@ import market.example.food.Food;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class Cart<T extends Food> {
@@ -39,6 +40,7 @@ public class Cart<T extends Food> {
         boolean proteins = false;
         boolean fats = false;
         boolean carbohydrates = false;
+
 
         for (var food : foodstuff) {
             if (!proteins && food.getProteins())

@@ -37,7 +37,7 @@ public class UMarket {
     }
 
     public <T extends Thing> void printThings(Class<T> clazz) {
-        int[ ] index = {1};
+        int[] index = {1};
         things.stream()
                 .filter(clazz::isInstance)
                 .forEach(thing -> {
